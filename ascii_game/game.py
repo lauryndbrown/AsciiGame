@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
 from player import Player
+
+
 class Choice:
     """
     Class representing the choices that the user sees on the screen coupling it with the corresponding functionality.
@@ -50,7 +52,7 @@ class Game(ABC):
         Invokes the game's logic.
         Returns False if the user has requested to end the game. True otherwise.
         """
-        choice = display.actions_menu(self.menu)
+        choice = self.display.actions_menu(self.menu)
         if choice.menu != None:
             self.prev_menu = self.menu
             self.menu = self.menus[choice.menu]

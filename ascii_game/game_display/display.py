@@ -59,4 +59,9 @@ class Display(ABC):
         if offset < lines:
             print('\n'*(lines-offset))
     def actions_menu(self, menu, message="Enter next action: "):
-        return enter_next_action(message, self.menu, self.display)
+        return enter_next_action(message, menu, self)
+    def reset(self):
+        """
+        Re-prints the current screen 
+        """
+        self.last_menu[0](*tuple(self.last_menu[1]))
