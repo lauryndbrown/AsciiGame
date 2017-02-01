@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from player import Player
+from ascii_game.player import Player
 
 
 class Choice:

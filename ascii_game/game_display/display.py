@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 import os
 from subprocess import call
 from PIL import Image
-from game_display.ascii_art import ASCII_Art
-from game_display.input_tools import *
+from ascii_game.game_display.ascii_art import ASCII_Art
+from ascii_game.game_display.input_tools import *
 
 
 class Display(ABC):
