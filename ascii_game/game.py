@@ -42,7 +42,6 @@ class Game(ABC):
         Plays the game. While still_playing is True keep playing.
         Note that it calls self.tick(). 
         """
-        self.display.game_screen(self)
         still_playing = True
         while still_playing:
             still_playing = self.tick() 
