@@ -56,6 +56,18 @@ class Display(ABC):
         """
         print()
         call(["clear"])
+    def _in_game_menu(self, choices):
+        """
+        Private method to display the in-game menu choices
+        """
+        menu_str = ""
+        for index in range(len(choices)):
+            choice_str = "{}[{}]".format(choices[index].name,index)
+            menu_str+="{}     ".format(choice_str)
+        print(self.center("Menu", self.HR_DASHED))
+        print(self.center(menu_str, ' '))
+
+          
     def fill_screen(self, offset):
         """
         Fills remaining lines of screen with Whitespace
