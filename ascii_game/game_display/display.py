@@ -82,7 +82,7 @@ class Display(ABC):
         Re-prints the current screen 
         """
         self.last_menu[0](*tuple(self.last_menu[1]))
-    def get_terminal_col():
+    def get_terminal_col(self):
         return os.get_terminal_size().columns
-    def get_terminal_lines():
+    def get_terminal_lines(self):
         return os.get_terminal_size().lines
