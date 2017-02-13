@@ -7,9 +7,14 @@ from ascii_game.game_display.input_tools import *
 
 
 class Display(ABC):
+    #Commonly Used characters for Horizontal Rule
+    HR_BOLD = "="
+    HR_DASHED = '-'
+    HR_LIGHT = '_'
     def __init__(self, col_size=50, chars=list('#@%S?+:*,. ')):
         self.image_converter = ASCII_Art(chars)
         self.col_size=col_size
+        self.last_screen_method = None
     @abstractmethod
     def game_screen(self, game, player_1, player_2):
         pass
