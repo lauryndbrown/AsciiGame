@@ -57,11 +57,8 @@ class Game(ABC):
             self.menu = self.menus[choice.menu]
         #calls the appropriate method for choice 
         choice.method(*tuple(choice.args))
-        return choice.method!=self.end_game
-
-    def save_game(self):
-        """
-        Saves the game to be reloaded at a future time
-        """
-        pass
-
+        return choice.method!=self.exit_game
+    
+    @abstractmethod
+    def exit_game(self):
+        return False
