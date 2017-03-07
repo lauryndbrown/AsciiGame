@@ -60,12 +60,12 @@ class Display(ABC):
         """
         Private method to display the in-game menu choices
         """
-        menu_str = ""
+        menu_str = []
         for index in range(len(choices)):
             choice_str = "{}[{}]".format(choices[index].name,index)
-            menu_str+="{}     ".format(choice_str)
+            menu_str.append("{}     ".format(choice_str))
         print(self.center("Menu", self.HR_DASHED))
-        print(self.center(menu_str, ' '))
+        print(self.center("".join(menu_str), ' '))
 
           
     def fill_screen(self, offset):

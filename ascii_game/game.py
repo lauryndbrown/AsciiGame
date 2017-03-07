@@ -23,7 +23,8 @@ class Choice:
         self.menu = menu
     def __str__(self):
         return "Name:{} Method:{} Menu:{}".format(self.name,self.method,self.menu)
-
+    def __repr__(self):
+        return self.__str__()
 class Game(ABC):
     """
     Generic Abstract Game Class

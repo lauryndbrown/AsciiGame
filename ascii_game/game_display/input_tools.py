@@ -3,7 +3,10 @@ User Input Tools for the ASCII Game Class
 """
 YES = "Y"
 NO = "N"
+ON = "ON"
+OFF = "OFF"
 YES_OR_NO = {YES:True,NO:False}
+ON_OR_OFF = {True:ON,False:OFF}
 def yes_or_no(message):
     """
     Helper Function that handles user input for yes or no questions
@@ -29,7 +32,7 @@ def enter_next_action(message, choices, display, should_confirm=False):
     while True:
         if response.isdigit():
             response = int(response)
-        if response in range(len(choices)):
+        if response >=0 and response<len(choices):
             if should_confirm:
                 response = are_you_sure(message)
             return choices[response]
