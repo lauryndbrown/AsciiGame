@@ -31,6 +31,8 @@ class Display(ABC):
     
     def image_to_ascii(self, path):
         """
+        Converts Image to ASCII
+        Prints ASCII
         """
         try:
             image = Image.open(path)
@@ -76,6 +78,9 @@ class Display(ABC):
         if offset < lines:
             print('\n'*(lines-offset))
     def actions_menu(self, menu, message="Enter next action: "):
+        """
+        Takes menu and choices and asks for next action from user
+        """
         return enter_next_action(message, menu, self)
     def reset(self):
         """
@@ -83,6 +88,12 @@ class Display(ABC):
         """
         self.last_menu[0](*tuple(self.last_menu[1]))
     def get_terminal_col(self):
+        """
+        Returns the number of columns of the terminal
+        """
         return os.get_terminal_size().columns
     def get_terminal_lines(self):
+        """
+        Returns the number of lines of the terminal
+        """
         return os.get_terminal_size().lines

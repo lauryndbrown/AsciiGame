@@ -101,7 +101,7 @@ class ASCII_Art:
         return self.chars[pixel_index]
     def combine(self, image_left, image_right):
         """
-        Blah!
+        Combines two ASCII Images
         """
         left = list(image_left)
         right = list(image_right)
@@ -122,6 +122,5 @@ if __name__=="__main__":
     chars = list('#@%S?+:*,. ')
     image = Image.open(sys.argv[1])
     img_converter = ASCII_Art(chars)
-    #img_converter.invert_chars()
     ascii_img = img_converter.image_to_ascii(image)
     print(ascii_img)
