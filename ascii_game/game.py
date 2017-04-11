@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from ascii_game.player import Player
-
+ 
 
 class Choice:
     """
