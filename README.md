@@ -4,8 +4,8 @@ Ascii Game Framework for Terminal-based Games
 ![Language:Python3](https://img.shields.io/badge/Language-Python3-green.svg)
 ![License:GNU GENERAL PUBLIC LICENSE](https://img.shields.io/badge/License-GNU-orange.svg)
 ## Bulit with AsciiGame
-- ![Monster AsciiGame](https://github.com/lauryndbrown/Monster_ASCII_Game)
-- ![AsciiGame TicTacToe](https://github.com/lauryndbrown/ASCII_Tic_Tac_Toe)
+- [Monster AsciiGame](https://github.com/lauryndbrown/Monster_ASCII_Game)
+- [AsciiGame TicTacToe](https://github.com/lauryndbrown/ASCII_Tic_Tac_Toe)
 ## Features
 * Game Menu System
 * Image to ASCII Art Converter
