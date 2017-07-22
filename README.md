@@ -1,11 +1,14 @@
 # AsciiGame
-Ascii Game Framework for Terminal-based Games
+Ascii Art Game Framework for Terminal-based Games
 
 ![Language:Python3](https://img.shields.io/badge/Language-Python3-green.svg)
 ![License:GNU GENERAL PUBLIC LICENSE](https://img.shields.io/badge/License-GNU-orange.svg)
-## Bulit with AsciiGame
-- [Monster AsciiGame](https://github.com/lauryndbrown/Monster_ASCII_Game)
-- [AsciiGame TicTacToe](https://github.com/lauryndbrown/ASCII_Tic_Tac_Toe)
+## Built with AsciiGame
+### [Monster AsciiGame](https://github.com/lauryndbrown/Monster_ASCII_Game)
+TODO: add screen shots
+### [AsciiGame TicTacToe](https://github.com/lauryndbrown/ASCII_Tic_Tac_Toe)
+TODO: add screen shots
+
 ## Features
 * Game Menu System
 * Image to ASCII Art Converter
@@ -62,5 +65,3 @@ Set your current menu with self.menu. This will represent the first menu to disp
 * **game_display/ascii_art.py** - Image to ASCII Art Converter.
 * **game_display/display.py** - Contains the Abstract base class for the game display with serveral common tools to be used in the display.
 * **game_display/input_tools.py** - Contains several methods used to obtain user input.
-
-Note that these files inherit additional functionality from the ASCII Game Framework.
