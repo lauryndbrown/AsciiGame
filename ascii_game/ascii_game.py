@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from player import Player
 from input_tools import *
+import click
 class Choice:
     """
     Class representing the choices that the user sees on the screen coupling it with the corresponding functionality.
@@ -66,3 +67,9 @@ class Game(ABC):
         """
         pass
 
+@click.command()
+def cli():
+    click.echo("Ascii Game")
+
+if __name__ == '__main__':
+    cli()

@@ -1,19 +1,23 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 
-with open('README.md') as f:
-    readme = f.read()
-#License not yet added
-#with open('LICENSE') as f:
-#    license = f.read()
 setup(
-    name='sample',
+    name='ASCII Game',
     version='0.0.1',
     description='Terminal-Based Game Framework',
-    long_description=readme,
+    url='https://github.com/lauryndbrown/AsciiGame',
     author='Lauryn Brown',
-    author_email='',
-    url='github',
-    license='license',
-    packages=find_packages(exclude=('tests', 'docs'))
-)
+    author_email='lauryndbrown@gmail.com',
+    license='GNU GPLv3',
+    packages=find_packages(),
+    install_requires=[
+        'pillow',
+        'Click',
+    ],
+    entry_points={
+        'console_scripts':[
+            'ascii_game=ascii_game.ascii_game:cli',
+        ]
+    }, 
+    include_package_data=True,
+    zip_safe=False)
