@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from player import Player
-from input_tools import *
+from .player import Player
+from .game_display.input_tools import *
 import click
 class Choice:
     """
