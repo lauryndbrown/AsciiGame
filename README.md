@@ -4,10 +4,9 @@ Ascii Art Game Framework for Terminal-based Games
 ![Language:Python3](https://img.shields.io/badge/Language-Python3-green.svg)
 ![License:GNU GENERAL PUBLIC LICENSE](https://img.shields.io/badge/License-GNU-orange.svg)
 ## Built with AsciiGame
-### [Monster AsciiGame](https://github.com/lauryndbrown/Monster_ASCII_Game)
-TODO: add screen shots
+### [AsciiMon](https://github.com/lauryndbrown/AsciiMon)
+![Walking Gif](https://github.com/lauryndbrown/AsciiMon/blob/master/Monster_ASCII_Game/Screenshots/walkdemo.gif)
 ### [AsciiGame TicTacToe](https://github.com/lauryndbrown/ASCII_Tic_Tac_Toe)
-TODO: add screen shots
 
 ## Features
 * Game Menu System
