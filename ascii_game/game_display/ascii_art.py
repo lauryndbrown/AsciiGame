@@ -24,7 +24,7 @@ class ASCII_Art:
         Given an image converts to ASCII Art
         """
         image = self.to_greyscale(image)
-        image = self.scale_image(image, scaled_size)
+        #image = self.scale_image(image, scaled_size)
         ascii_chars = self.pixels_to_ascii(image)
         return ''.join(ascii_chars)
 
@@ -99,6 +99,25 @@ class ASCII_Art:
         #You would also add the min possible pixel if it were not zero
         pixel_index = int(pixel/255*(len(self.chars)-1))
         return self.chars[pixel_index]
+    def combine(self, image_left, image_right):
+        """
+        Blah!
+        """
+        left = list(image_left)
+        right = list(image_right)
+        result = []
+        right_index = 0
+        for left_pix in left:
+            if left_pix!="\n":
+                result.append(left_pix)
+            else:
+                while right_index<len(right) and right[right_index]!="\n":
+                    result.append(right[right_index])
+                    right_index+=1
+                result.append("\n")
+                right_index+=1
+        return ''.join(result)
+
 if __name__=="__main__":
     chars = list('#@%S?+:*,. ')
     image = Image.open(sys.argv[1])
