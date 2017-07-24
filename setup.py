@@ -2,8 +2,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='ASCII Game',
-    version='0.0.1',
+    name='ascii-game',
+    version='0.0.2',
     description='Terminal-Based Game Framework',
     url='https://github.com/lauryndbrown/AsciiGame',
     author='Lauryn Brown',
@@ -16,7 +16,7 @@ setup(
     ],
     entry_points={
         'console_scripts':[
-            'ascii_game=ascii_game.ascii_game:cli',
+            'ascii-game=ascii_game.ascii_game:cli',
         ]
     }, 
     include_package_data=True,
